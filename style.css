@@ -37,6 +37,7 @@ body {
   /* background: Color image position size */
 
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 
 
 }
@@ -46,10 +47,12 @@ body * {
   /* <weight>: Use a value from 100 to 900*/
   font-family: "Inter", serif;
   color: var(--text-color);
+    
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 580px;
   margin: 56px auto 0px;
   padding: 0px 24px;
  
@@ -180,3 +183,15 @@ footer{
   text-align: center;
 }
 
+/* media querys */
+
+@media(min-width: 700px){
+  :root{
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
+
+}

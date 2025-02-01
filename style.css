@@ -90,11 +90,9 @@ body * {
 
   position: absolute;
   top:50%;
-  animation: slide-out 0.4s forwards;
+  animation: slide-out 0.4s;
   z-index: 1;
   transform: translateY(-50%);
-  
-  
   
 }
 
